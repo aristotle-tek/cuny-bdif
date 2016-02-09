@@ -1,26 +1,12 @@
 #!/bin/bash
-#
-#
-#PBS -N mpi3
-#PBS -M ajp502@nyu.edu
-#PBS -l nodes=2:ppn=2,walltime=0:02:00
-#PBS -m abe
 
-module purge
-module load openmpi/intel/1.6.5
+#PBS -N mpihello
+#PBS -l select=4:ncpus=1,walltime=0:02:00
+#PBS -l place=free
+#PBS -V
+#PBS -q production
 
-cd $WORK/mpi
+cd $PBS_O_WORKDIR
 
-mpic++ -o hellos hellos2.cpp
+mpirun -np 4  hellos 2>&1
 
-if [ $? -ne 0 ]; then
-  echo "Errors compiling program, exiting."
-  exit
-fi
-
-mpirun -np 4 hellos 2>&1
-
-# cleanup:
-rm hellos
-
-exit 0;
