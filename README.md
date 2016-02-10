@@ -1,2 +1,3 @@
-# cuny-bdif
-Materials for Big Data in Finance (Baruch MFE 9898)
+#Big Data in Finance#
+##Masters in Financial Engineering##
+(Baruch CUNY MFE 9898)

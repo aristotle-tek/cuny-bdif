@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -N git
+#PBS -l select=1:ncpus=1,walltime=0:03:00
+#PBS -l place=free
+#PBS -V
+#PBS -q production
+
+cd $PBS_O_WORKDIR
+
+git clone https://github.com/aristotle-tek/cuny-bdif.git
+
