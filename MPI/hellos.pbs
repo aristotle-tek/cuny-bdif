@@ -4,9 +4,14 @@
 #PBS -l select=4:ncpus=1,walltime=0:02:00
 #PBS -l place=free
 #PBS -V
-#PBS -q production
+#PBS -q development
 
 cd $PBS_O_WORKDIR
+
+echo -n ">>>> PBS Master compute node is: "
+hostname
+echo ""
+
 
 mpirun -np 4  hellos 2>&1
 
