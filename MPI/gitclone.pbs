@@ -1,9 +1,9 @@
 #!/bin/bash
 #PBS -N git
-#PBS -l select=1:ncpus=1,walltime=0:03:00
+#PBS -l select=1:ncpus=1,walltime=0:02:00
 #PBS -l place=free
 #PBS -V
-#PBS -q production
+#PBS -q development
 
 cd $PBS_O_WORKDIR
 
