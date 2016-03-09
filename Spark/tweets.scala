@@ -48,7 +48,7 @@ tweets.select("user.lang").show
 
 // filter for French tweets:
 val fr = tweets.filter(col("user.lang").like("%fr%"))
-fr.count 
+fr.count
 
 //print all the French tweets (some are not in French - it is a static setting...)
 fr.map(t => "Text: " + t.getAs[String]("text")).collect().foreach(println)
@@ -76,7 +76,7 @@ wordFreq.collect.foreach(println)
 
 // just the top results:
 wordFreq.map(x => (x._2, x._1)).top(3)
- 
+
 
 
 

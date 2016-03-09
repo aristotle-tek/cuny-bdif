@@ -29,8 +29,8 @@ wordCounts.print()
 ssc.start()             // Start the computation
 ssc.awaitTermination()  // Wait for the computation to terminate
 
-// In another tmux window (cntl+c), run Netcat  as a data server by using
- nc -lk 9999
+// In another tmux window (cntl+b, c), run Netcat  as a data server by using
+nc -lk 9999
 
 // Then, in a different terminal, you can start the example by using
  ./bin/run-example streaming.NetworkWordCount localhost 9999
