@@ -62,7 +62,16 @@ tmux
 #-------------------------
 #  load json
 #-------------------------
+# you may first need to mount the ebs volume, since you will not have enough space in the home volume.
+# You first need to find where the drive is with
+df -h
+# then, if it is, say /dev/sdb/, and you want to mount it at a folder called ebsvol, you would use:
+mkdir ebsvol
+mount /deb/sdb/ ebsvol
+
+#now you can use this volume just like any other folder:
 cd ebsvol
+
 aws s3 cp s3://bdif-tweets/sample/sampletweets.tar sample.tar
 
 tar -xvf sample.tar
@@ -103,7 +112,7 @@ hadoop fs -put test.txt tweets/
 
 # (optional) change logging, e.g. from INFO to DEBUG
 # need to work on this...
-nano /root/ephemeral-hdfs/conf/log4j.properties
+#nano /root/ephemeral-hdfs/conf/log4j.properties
 # then need to propagate...
 
 
