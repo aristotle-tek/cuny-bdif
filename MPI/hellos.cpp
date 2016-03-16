@@ -1,5 +1,5 @@
-# include <cstdlib>
-# include "mpi.h"
+#include <cstdlib>
+#include "mpi.h"
 using namespace std;
 
 int main ( int argc, char *argv[] )
