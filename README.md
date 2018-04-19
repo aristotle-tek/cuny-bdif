@@ -1,7 +1,8 @@
-#Big Data in Finance#
-##Masters in Financial Engineering##
+# Big Data in Finance #
 
-Baruch College, City University of New York, Department of Mathematics, MFE 9898, 2016.
+## Masters in Financial Engineering ##
+
+### Baruch College, City University of New York, Department of Mathematics, MFE 9898, 2016. ###
 
 ## Instructor ##
 
@@ -18,8 +19,8 @@ This repository includes basic information for class sessions on analyzing big d
 | 1 | MPI Programming in C++ | [Slides, code](https://github.com/aristotle-tek/cuny-bdif/tree/master/MPI) |
 | 2 | Apache Spark for Analyzing Tweets and Streaming data | [Slides, code](https://github.com/aristotle-tek/cuny-bdif/tree/master/Spark) |
 | 3 | Launching Spark on Amazon AWS, | [Slides, code](https://github.com/aristotle-tek/cuny-bdif/tree/master/AWS)|
-| 4 | Assignment C: Predicting Stocks from Twitter data using Spark | [Assignment](https://github.com/aristotle-tek/cuny-bdif/tree/master/Assignment_C.pdf)) | 
+| 4 | Assignment C: Predicting Stocks from Twitter data using Spark | [Assignment](https://github.com/aristotle-tek/cuny-bdif/tree/master/Assignment_C.pdf) | 
 | 5 | Assignment C: Cleaning Tweet Data | [code](https://github.com/aristotle-tek/cuny-bdif/tree/master/clean_public_tweets) |
-| 5 | Assignment C: Gathering Stock Data | [code](https://github.com/aristotle-tek/cuny-bdif/tree/master/yahoo_stock_data) |
+| 6 | Assignment C: Gathering Stock Data | [code](https://github.com/aristotle-tek/cuny-bdif/tree/master/yahoo_stock_data) |
 
 
