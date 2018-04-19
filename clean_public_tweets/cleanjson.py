@@ -104,7 +104,7 @@ def clean_json(filelist, docfilepath):
         for f1 in filelist:
                 tweets = consolidate_multiline_tweets(f1)
                 rows = generate_rows(tweets)
-                print(len(rows))
+                #print(len(rows))
                 write_json_rows(rows, docfilepath) # NB this appends to the file.
 #-----------------------------------------------------------
 
