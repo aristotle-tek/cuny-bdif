@@ -729,12 +729,12 @@ class OpsWorksConnection(AWSQueryConnection):
 
 
         + custom: A custom layer
-        + db-master: A MySQL layer
+        + db-main: A MySQL layer
         + java-app: A Java App Server layer
         + rails-app: A Rails App Server layer
         + lb: An HAProxy layer
         + memcached: A Memcached layer
-        + monitoring-master: A Ganglia layer
+        + monitoring-main: A Ganglia layer
         + nodejs-app: A Node.js App Server layer
         + php-app: A PHP App Server layer
         + web: A Static Web Server layer
@@ -1902,7 +1902,7 @@ class OpsWorksConnection(AWSQueryConnection):
         :param rds_db_instance_arn: The Amazon RDS instance's ARN.
 
         :type db_user: string
-        :param db_user: The database's master user name.
+        :param db_user: The database's main user name.
 
         :type db_password: string
         :param db_password: The database password.
@@ -2504,7 +2504,7 @@ class OpsWorksConnection(AWSQueryConnection):
         :param rds_db_instance_arn: The Amazon RDS instance's ARN.
 
         :type db_user: string
-        :param db_user: The master user name.
+        :param db_user: The main user name.
 
         :type db_password: string
         :param db_password: The database password.
